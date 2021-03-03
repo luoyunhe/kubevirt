@@ -17,5 +17,11 @@ jobs:
         ref: master
     - name: Build
       run: |
-        ls
+        sudo apt-install rsync -y
         make builder-build
+        make
+        docker image ls
+        
+        
+        
+        
