@@ -14,7 +14,5 @@ jobs:
 
     - name: Build
       run: |
-        apt-get install docker -y
-        systemctl enable docker && systemctl start docker
-        apt-get install -y rsync
-        apt-get install -y git
+        ls
+        make builder-build
