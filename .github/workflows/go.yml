@@ -17,6 +17,7 @@ jobs:
         ref: master
     - name: Build
       run: |
+        ls
         make builder-build
         make
         make push
