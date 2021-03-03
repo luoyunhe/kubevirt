@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Build
-      run: ｜
+      run: |
         apt-get install docker -y
         systemctl enable docker && systemctl start docker
         apt-get install -y rsync
