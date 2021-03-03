@@ -17,10 +17,9 @@ jobs:
         ref: master
     - name: Build
       run: |
-        sudo apt-get install rsync -y
         make builder-build
         make
-        docker image ls
+        make push
         
         
         
