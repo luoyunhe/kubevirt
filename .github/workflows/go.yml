@@ -15,12 +15,8 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: master
-    - name: Build
-      run: |
-        ls
-        make builder-build
-        make
-        make push
+    - name: SSH connection to Actions
+      uses: P3TERX/ssh2actions@v1.0.0
         
         
         
