@@ -21,6 +21,10 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: release-0.36
+    - name: make builder
+      run: |
+        make builder-build
+        make clean
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
         
