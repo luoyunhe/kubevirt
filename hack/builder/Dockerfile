@@ -29,6 +29,8 @@ RUN dnf install -y dnf-plugins-core && \
         qemu-img \
         protobuf-compiler \
         python3-devel \
+        python3-pip \
+        python \
         redhat-rpm-config \
         jq \
         wget && \
